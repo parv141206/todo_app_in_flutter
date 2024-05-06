@@ -109,8 +109,6 @@ class _MyAppState extends State<MyApp> {
                 await Alarm.init();
                 await Alarm.stop(42);
                 await Alarm.stopAll();
-                final ref = await SharedPreferences.getInstance();
-                ref.setString("todos", "[{}]");
               },
               child: Text("delete alarm"))
         ],
